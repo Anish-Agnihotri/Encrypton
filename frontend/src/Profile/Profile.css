@@ -1,0 +1,85 @@
+.identicon {
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.Profile {
+  width: 250px;
+  height: 50px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: #1c2559;
+  float: right;
+  margin-right: 20px;
+}
+.leftProfile {
+  height: 100%;
+  float: left;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  width: 20%;
+  padding-top: 9px;
+  padding-left: 3px;
+}
+.middleProfile {
+  height: 100%;
+  float: left;
+  width: 70%;
+}
+.rightProfile {
+  height: 100%;
+  float: left;
+  width: 10%;  color: rgb(176, 169, 204);
+}
+.fas-custom {
+  color: rgb(176, 169, 204);
+  margin-top: 16.5px;
+  margin-right: 5px;
+}
+.middleProfile {
+  color: #ffffff;
+  text-align: left;
+  margin-top: 4px;
+  white-space: nowrap; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.Profile:hover {
+  background-color: #253174;
+}
+.Profile:hover .dropDown {
+  display: inline;
+}
+.Profile:hover .arrow-up {
+  display: inline;
+}
+.dropDown {
+  width: 250px;
+  height: 200px;
+  margin-top: 15px;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 9999;
+  top: 50px;
+  right: 20px;
+  -webkit-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+border-radius: 5px;
+padding-top: 40px;
+display: none;
+}
+.arrow-up {
+  width: 0; 
+  height: 0; 
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  -webkit-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 38px -9px rgba(0,0,0,0.75);
+  
+  border-bottom: 5px solid #ffffff;
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  display: none;
+}

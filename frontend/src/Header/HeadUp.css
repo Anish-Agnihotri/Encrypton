@@ -1,0 +1,99 @@
+.header {
+    height: 70px;
+    width: 100%;
+    border-bottom: 2px solid rgb(240,240,245);
+  }
+  .logo {
+    width: 20%;
+    height: 100%;
+    float: left;
+  }
+  .logo > a > img {
+    width: 65%;
+    margin-top: 15px;
+    padding-left: 30px;
+  }
+  .links {
+    width: 50%;
+    height: 100%;
+    float: left;
+  }
+  .links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+  
+  .links li {
+    float: left;
+  }
+  
+  .links li a {
+    display: block;
+    color: rgb(176, 169, 204);
+    text-align: center;
+    padding: 14px 12px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .links li a:hover {
+    color: #1c2259;
+    transition: 0.3s ease;
+  }
+  .highlight {
+    color: #1c2559 !important;
+  }
+  .auth {
+    width: 30%;
+    height: 100%;
+    float: left;
+  }
+  .signInButton {
+    text-decoration: none;
+    background-color: #1c2559;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-weight: 300;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+  .signInButton:hover {
+    background-color: #253174;
+    transition: 0.3s ease;
+  }
+  .signInButton i {
+    color: #ffffff;
+    margin-right: 10px;
+  }
+  .help {
+    text-decoration: none;
+    border: 2px solid rgb(176, 169, 204);
+    color: rgb(176, 169, 204);
+    border-radius: 5px;
+    padding: 8px 13px;
+    font-weight: 300;
+    float: right;
+    margin-top: 15px;
+    margin-right: 20px;
+  }
+  .help:hover {
+    background-color: rgb(176, 169, 204);
+    color: #ffffff;
+    transition: 0.3s ease;
+  }
+  .help i {
+    color: rgb(176, 169, 204);
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  .help:hover i {
+    color: #ffffff;
+  }
+ 
