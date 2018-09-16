@@ -39,6 +39,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+<script> 
+// test creds: U2FsdGVkX19LRiHia8osWoZMtaeBt6e2TSNtmBXTzgqM24vNvYd1dLfkcj/6N8eiVnr8bfo/hssAubCjU5TPag== , password
+$( document ).ready(function() {
+  $("#checkHash button.textSubmit").click(function() {
+    hashKey = $("#checkHash input[type=text]").val();
+    enCryptionPassword = $("#checkHash input[type=password]").val();
+    var decryptedView = CryptoJS.AES.decrypt(hashKey, enCryptionPassword).toString(CryptoJS.enc.Utf8);
+    $("div.addToCard").html('<a href="' + 'https://gateway.ipfs.io/ipfs/' + decryptedView + '">Here</a> is your encrypted document.');
+  });
+});
+</script>
 </body>
 
 </html>

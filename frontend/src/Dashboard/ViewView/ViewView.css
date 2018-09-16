@@ -1,0 +1,34 @@
+@import 'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css';
+.textSubmit {
+    border-color: #1c2259 !important;
+  }
+.textSubmit:hover {
+  background-color: #1c2259 !important;
+  color: #ffffff;
+}
+.card-header {
+  background-color: #1c2259 !important;
+  color: #ffffff;
+}
+.uploadFile {
+  border-color: #1c2259 !important;
+  margin-top: 5px;
+  margin-top: -3px; 
+  margin-left: 5px;
+}
+.uploadFile:hover {
+  background-color: #1c2259 !important;
+  color: #ffffff;
+}
+.marginPadding {
+    margin-left: 28%;
+    margin-right: 28%;
+}
+.form-control {
+  display: block !important;
+  width: 100% !important;
+  margin-bottom: 10px;
+}
+.hiddenParagraph {
+  display: none;
+}
