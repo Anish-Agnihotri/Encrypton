@@ -1,12 +1,174 @@
 .leftSide {
     width: 50%;
     height: calc(100vh - 70px);
-    background-color: #000000;
+    color: #000000;
     float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 14%;
+}
+.leftSide > img {
+    width: 50%;
+}
+.leftSide > h2 {
+    color: #1c2259;
+    padding-bottom: 0;
+}
+.leftSide > p {
+    margin-top: -15%;
 }
 .rightSide {
     width: 50%;
     height: calc(100vh - 70px);
-    background-color: #cccccc;
     float: left;
 }
+.wrapper {
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .container {
+    transform: rotateX(40deg) rotateY(40deg) rotateZ(90deg);
+    transform-style: preserve-3d;
+    position: relative;
+    display: flex;
+    height: 400px;
+    width: 400px;
+    margin: 100px 0;
+  }
+  
+  .sphere, .ring {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+  }
+  
+  .sphere {
+    animation: rotateSphere 10s linear infinite;
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(1) {
+    transform: rotateY(18deg);
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(2) {
+    transform: rotateY(36deg);
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(3) {
+    transform: rotateY(54deg);
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(4) {
+    transform: rotateY(72deg);
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(5) {
+    transform: rotateY(90deg);
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(6) {
+    transform: rotateY(108deg);
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(7) {
+    transform: rotateY(126deg);
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(8) {
+    transform: rotateY(144deg);
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(9) {
+    transform: rotateY(162deg);
+  }
+  .sphere:nth-of-type(1) .ring:nth-of-type(10) {
+    transform: rotateY(180deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(1) {
+    transform: rotateX(18deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(2) {
+    transform: rotateX(36deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(3) {
+    transform: rotateX(54deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(4) {
+    transform: rotateX(72deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(5) {
+    transform: rotateX(90deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(6) {
+    transform: rotateX(108deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(7) {
+    transform: rotateX(126deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(8) {
+    transform: rotateX(144deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(9) {
+    transform: rotateX(162deg);
+  }
+  .sphere:nth-of-type(2) .ring:nth-of-type(10) {
+    transform: rotateX(180deg);
+  }
+  
+  .ring {
+    border: 2px solid;
+    box-sizing: border-box;
+    border-radius: 50%;
+    opacity: 0;
+    animation: fadeIn 2000ms ease infinite;
+    box-shadow: 0 0 80px rgba(255, 255, 255, 0.2), inset 0 0 80px rgba(255, 255, 255, 0.2);
+  }
+  .ring:nth-of-type(1) {
+    border-color: #1c2259;
+    animation-delay: 200ms;
+  }
+  .ring:nth-of-type(2) {
+    border-color: #1c2259;
+    animation-delay: 400ms;
+  }
+  .ring:nth-of-type(3) {
+    border-color: #1c2259;
+    animation-delay: 600ms;
+  }
+  .ring:nth-of-type(4) {
+    border-color: #1c2259;
+    animation-delay: 800ms;
+  }
+  .ring:nth-of-type(5) {
+    border-color: #1c2259;
+    animation-delay: 1000ms;
+  }
+  .ring:nth-of-type(6) {
+    border-color: #1c2259;
+    animation-delay: 1200ms;
+  }
+  .ring:nth-of-type(7) {
+    border-color: #1c2259;
+    animation-delay: 1400ms;
+  }
+  .ring:nth-of-type(8) {
+    border-color: #1c2259;
+    animation-delay: 1600ms;
+  }
+  .ring:nth-of-type(9) {
+    border-color: #1c2259;
+    animation-delay: 1800ms;
+  }
+  .ring:nth-of-type(10) {
+    border-color: #1c2259;
+    animation-delay: 2000ms;
+  }
+  
+  @keyframes rotateSphere {
+    to {
+      transform: rotateX(360deg) rotateY(360deg);
+    }
+  }
+  @keyframes fadeIn {
+    from, to {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+  
