@@ -1,69 +1,34 @@
-# Login with MetaMask
+# pIDentity
 
-This demo is published as part of the corresponding blog article ["One-Click Login with Blockchain: a MetaMask Tutorial"](https://www.toptal.com/ethereum/one-click-login-flows-a-metamask-tutorial#utilize-unreal-developers-today).
+pIDentity was designed and developed to be an easy solution to document credentialization and authentication on a public ledger. By it offers a convenient way for individuals and organizations to verify users and share files over the IPFS (InterPlanetary File System) using the inherent trust built into hash storing and the Ethereum Blockchain.
 
-## Live Demo 🚀
 
-The working app can be seen on Firebase: https://login-with-metamask.firebaseapp.com.
+## Inspiration
+The idea stemmed from the conspicuous lack of beautiful, easy to use, web-based file transfer managers available to the everyday Joe. We realized, however, that such a platform could be so much more. With pIDentity, we introduce smart contracts to provide a secure and streamlined file sharing experience.
 
-The backend is hosted on Now by Zeit: https://login-with-metamask.now.sh/api/users
+
+## Demo Pics 🚀
+
+The working app can be seen here: https://google.ca
 
 ![demo](https://uploads.toptal.io/blog/image/125794/toptal-blog-image-1522395423193-b3227ea1f43c6cbb9f78e090bd7bb2ee.gif)
 
-## Getting Started
 
-The app is made out of a `backend` which is a REST API written in Express, and a `frontend` which is a React single-page application. It's really a demo, so I tried to use as few libraries as possible.
+## What is pIDentity?
+pIDentity provides people who need a way to transfer files securely
 
-The simplest way to get started is to launch the demo using docker compose. Alternatively you could launch docker the containers manually, or run the node services using yarn.
-
-#### Launch the demo using Docker Compose:
-```bash
-docker-compose up -d
-```
-
-This will leave a the bakcend listening on localhost:8000 and the frontend on localhost:3000.
-
-#### Launching the demo using Docker:
-
-Build and launch the backend:
-
-```bash
-cd backend
-docker build -t login-backend .
-docker run -d -p 8000:8000 login-backend
-```
-
-Build and launch the frontend:
-
-```bash
-cd frontend
-docker build -t login-front .
-docker run -d -p 3000:3000 login-frontend
-```
-
-You can then access the app on localhost:3000.
+The app is made out of a `backend` which is a REST API written in Express, and a `frontend` which is a React  application.
 
 
-#### Start the backend using Yarn:
-```bash
-cd backend
-yarn install
-yarn dev # Will reload the node app on file changes
-```
+## Software Usage
+We used the following technologies:
 
-The backend should be running on localhost:8000.
+1. MetaMask for verification and interface of Ethereum blockchain in the browser
+2. ReactJS
 
-#### Start the frontend using Yarn:
+## Next Steps
 
-```bash
-cd frontend
-yarn install
-yarn start # Will refresh the page on file changes
-```
+Our platform provides a simple, integrated, one-stop shop for
 
-* * *
 
-This demo is published as part of the corresponding blog article at https://www.toptal.com/ethereum/one-click-login-flows-a-metamask-tutorial#utilize-unreal-developers-today.
-Visit https://www.toptal.com/blog and subscribe to our newsletter to read great posts!
-
-If you liked this demo, I appreciate small donations. 0xa395447BF15f7525484C0378c76627D45ADE0B96
+## Thank You For Reading and Stay Tuned for Future Updates!
