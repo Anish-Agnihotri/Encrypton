@@ -2,6 +2,7 @@
     height: 70px;
     width: 100%;
     border-bottom: 2px solid rgb(240,240,245);
+    background-color: #ffffff !important;
   }
   .logo {
     width: 20%;

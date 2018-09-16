@@ -7,7 +7,7 @@ class ViewView extends Component {
             <div className="marginPadding">
                 <div className="card bg-light mb-3 mx-auto" id="checkHash">
                     <div className="card-header">
-                        <b>Step 1:</b> Enter your hash and decryption key.
+                        Enter your hash and decryption key.
                     </div>
                     <div className="card-body addToCard">
                         <div className="form-group form-inline">

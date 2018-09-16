@@ -19,12 +19,13 @@
   border-top-left-radius: 5px;
   width: 20%;
   padding-top: 9px;
-  padding-left: 3px;
+  padding-left: 10px;
 }
 .middleProfile {
   height: 100%;
   float: left;
   width: 70%;
+  padding-top: 12px;
 }
 .rightProfile {
   height: 100%;

@@ -51,6 +51,11 @@ $( document ).ready(function() {
     var decryptedView = CryptoJS.AES.decrypt(hashKey, enCryptionPassword).toString(CryptoJS.enc.Utf8);
     $("div.addToCard").html('<a href="' + 'https://gateway.ipfs.io/ipfs/' + decryptedView + '">Here</a> is your encrypted document.');
   });
+  $('#checkHashNoEncrypt button.textSubmit').click(function() {
+    preHashKey = $("#checkHashNoEncrypt input[type=text]").val();
+    $("div.addToCard2").html('<a href="' + 'https://gateway.ipfs.io/ipfs/' + preHashKey + '">Here</a> is your encrypted document.');
+  });
+  //$('blockHeight').html(parsedValue);
 });
 </script>
 </body>

@@ -8,6 +8,11 @@ import EncryptView from '../Dashboard/EncryptView';
 import TextHeader from '../Dashboard/TextHeader';
 import ViewView from '../Dashboard/ViewView';
 import ViewHeader from '../Dashboard/ViewHeader';
+import DocumentationView from '../DocumentationView';
+import BusHeader from '../BusHeader';
+import ExplorerView from '../ExplorerView';
+import StatusView from '../StatusView';
+import HomeView from '../HomeView';
 
 const App = () => (
   <div className='app'>
@@ -19,7 +24,7 @@ const App = () => (
 const Main = () => (
   <Switch>
     <Route exact path='/' component={Home}></Route>
-    <Route exact path='/central' component={Central}></Route>
+    <Route exact path='/explorer' component={Explorer}></Route>
     <Route exact path='/status' component={Status}></Route>
     <Route exact path='/documentation' component={Documentation}></Route>
     <Route exact path='/encrypt' component={Encrypt}></Route>
@@ -29,26 +34,28 @@ const Main = () => (
 
 const Home = () => (
   <div className='home'>
-    <h1>Home Router</h1>
+    <HomeView />
   </div>
 );
 
-
-const Central = () => (
-  <div className='main'>
-    <h1>Central Router</h1>
+const Explorer = () => (
+  <div className='explorer'>
+    <BusHeader />
+    <ExplorerView />
   </div>
 );
 
 const Status = () => (
   <div className='contact'>
-    <h1>Status Router</h1>
+    <BusHeader />
+    <StatusView />
   </div>
 );
 
 const Documentation = () => (
   <div className='status'>
-    <h1>Documentation Router</h1>
+    <BusHeader />
+    <DocumentationView />
   </div>
 );
 

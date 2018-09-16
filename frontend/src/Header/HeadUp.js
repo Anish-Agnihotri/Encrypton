@@ -32,7 +32,7 @@ class HeadUp extends Component {
             <div className="header">
                 <div className="logo">
                     <NavLink to='/'>
-                        <img src="https://i.imgur.com/7TMRr31.png" />
+                        <img src="https://i.imgur.com/qvn0Xu0.png" />
                     </NavLink>
                 </div>
                 <div className="links">
@@ -41,21 +41,10 @@ class HeadUp extends Component {
                             <NavLink to='/encrypt' activeClassName="highlight">DASHBOARD</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/central' activeClassName="highlight">CENTRAL</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/status' activeClassName="highlight">STATUS</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/documentation' activeClassName="highlight">DOCUMENTATION</NavLink>
+                            <NavLink to='/explorer' activeClassName="highlight">TOOLS</NavLink>
                         </li>
                     </ul>) : (<ul>
-                        <li>
-                            <NavLink to='/status' activeClassName="highlight">STATUS</NavLink>
-                        </li>
-                        <li>
-                            <NavLink to='/documentation' activeClassName="highlight">DOCUMENTATION</NavLink>
-                        </li>
+
                     </ul>)}
                     
                 </div>

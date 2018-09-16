@@ -1,0 +1,136 @@
+.visualGraph {
+    height: 80px;
+    width: 100%;
+    background-color: #1c2259;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 5px;
+    padding-left: 7px;
+    margin-bottom: 10px;
+  }
+  .leftAlign {
+      text-align: left;
+  }
+  .visualGraph > p {
+    text-align: left;
+  }
+  .leftGraph {
+    height: 80%;
+    width: 90%;
+    float: left;
+  }
+  .rightData {
+    height: 112%;
+    float: left;
+    width: 10%;
+    margin-top: -22px;
+  }
+  .rightData > li {
+    display: block;
+    margin-top: calc(56% - 5px);
+    margin-left: calc(50% - 5px);
+    float: left;
+    width: 10px;
+    height: 10px;
+    margin-right: 20px;
+    border-radius: 100%;
+      background: #0bd691;
+    box-shadow: inset 0px 0px 10px 2px rgba(0,255,182,0.5), 0px 0px 10px 2px rgba(0,255,182,0.3);
+    -webkit-animation: pulse 1s alternate infinite;
+    -moz-animation: pulse 1s alternate infinite;
+  }
+  @-webkit-keyframes pulse {
+    0% {
+      background: rgba(255,255,255,0.3);
+      box-shadow: inset 0px 0px 10px 2px rgba(0,255,182,0.5),
+                        0px 0px 5px 2px rgba(0,255,182,0.3);
+    }
+    100% {
+      background: rgba(255,255,255,1);
+      box-shadow: inset 0px 0px 10px 2px rgba(0,255,182,0.5),
+                        0px 0px 15px 2px rgba(0,255,182,1);
+    }
+  }
+  @-moz-keyframes pulse {
+    0% {
+      background: rgba(255,255,255,0.3);
+      box-shadow: inset 0px 0px 10px 2px rgba(0,255,182,0.5),
+                        0px 0px 5px 2px rgba(0,255,182,0.3);
+    }
+    100% {
+      background: rgba(255,255,255,1);
+      box-shadow: inset 0px 0px 10px 2px rgba(0,255,182,0.5),
+                        0px 0px 15px 2px rgba(0,255,182,1);
+    }
+  }
+  #mild {
+    background: #ffff00 !important;
+    box-shadow: inset 0px 0px 10px 2px rgba(255,255,0,0.5), 0px 0px 10px 2px rgba(255,255,0,0.3) !important;
+    -webkit-animation: pulse2 1s alternate infinite !important;
+    -moz-animation: pulse2 1s alternate infinite !important;
+  }
+  @-webkit-keyframes pulse2 {
+    0% {
+      background: rgba(255,255,255,0.3);
+      box-shadow: inset 0px 0px 10px 2px rgba(255,255,0,0.5),
+                        0px 0px 5px 2px rgba(255,255,0,0.3);
+    }
+    100% {
+      background: rgba(255,255,255,1);
+      box-shadow: inset 0px 0px 10px 2px rgba(255,255,0,0.5),
+                        0px 0px 15px 2px rgba(255,255,0,1);
+    }
+  }
+  @-moz-keyframes pulse2 {
+    0% {
+      background: rgba(255,255,255,0.3);
+      box-shadow: inset 0px 0px 10px 2px rgba(255,255,0,0.5),
+                        0px 0px 5px 2px rgba(255,255,0,0.3);
+    }
+    100% {
+      background: rgba(255,255,255,1);
+      box-shadow: inset 0px 0px 10px 2px rgba(255,255,0,0.5),
+                        0px 0px 15px 2px rgba(255,255,0,1);
+    }
+  }
+  #severe {
+    background: #ff3b30 !important;
+      box-shadow: inset 0px 0px 10px 2px rgba(255,0,0,0.5), 0px 0px 10px 2px rgba(255,0,0,0.3) !important;
+    -webkit-animation: pulse3 1s alternate infinite !important;
+    -moz-animation: pulse3 1s alternate infinite !important;
+  }
+  @-webkit-keyframes pulse3 {
+    0% {
+      background: rgba(255,255,255,0.3);
+      box-shadow: inset 0px 0px 10px 2px rgba(255,0,0,0.5),
+                        0px 0px 5px 2px rgba(255,0,0,0.3);
+    }
+    100% {
+      background: rgba(255,255,255,1);
+      box-shadow: inset 0px 0px 10px 2px rgba(255,0,0,0.5),
+                        0px 0px 15px 2px rgba(255,0,0,1);
+    }
+  }
+  @-moz-keyframes pulse3 {
+    0% {
+      background: rgba(255,255,255,0.3);
+      box-shadow: inset 0px 0px 10px 2px rgba(255,0,0,0.5),
+                        0px 0px 5px 2px rgba(255,0,0,0.3);
+    }
+    100% {
+      background: rgba(255,255,255,1);
+      box-shadow: inset 0px 0px 10px 2px rgba(255,255,0,0.5),
+                        0px 0px 15px 2px rgba(255,255,0,1);
+    }
+  }
+  .visualGraph > p {
+    color: #737373;
+    line-height: 0;
+    padding-top: 7.5px;
+  }
+  #finalobj {
+      margin-bottom: 50px;
+  }
+  .highlight1 {
+      color: #ffffff !important;
+  }

@@ -1,0 +1,12 @@
+.leftSide {
+    width: 50%;
+    height: calc(100vh - 70px);
+    background-color: #000000;
+    float: left;
+}
+.rightSide {
+    width: 50%;
+    height: calc(100vh - 70px);
+    background-color: #cccccc;
+    float: left;
+}
