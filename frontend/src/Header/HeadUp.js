@@ -65,7 +65,6 @@ class HeadUp extends Component {
                 ) : (
                     <Login onLoggedIn={this.handleLoggedIn} />
                 )}
-                 <NavLink className="help" to="/help"><i className= "fas fa-question"></i>HELP</NavLink>
                 </div>
             </div>
         );

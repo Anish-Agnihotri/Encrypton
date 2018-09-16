@@ -22,7 +22,6 @@ const Main = () => (
     <Route exact path='/central' component={Central}></Route>
     <Route exact path='/status' component={Status}></Route>
     <Route exact path='/documentation' component={Documentation}></Route>
-    <Route exact path='/help' component={Help}></Route>
     <Route exact path='/encrypt' component={Encrypt}></Route>
     <Route exact path='/view' component={View}></Route>
   </Switch>
@@ -50,12 +49,6 @@ const Status = () => (
 const Documentation = () => (
   <div className='status'>
     <h1>Documentation Router</h1>
-  </div>
-);
-
-const Help = () => (
-  <div className='status'>
-    <h1>Help Router</h1>
   </div>
 );
 

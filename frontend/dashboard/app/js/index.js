@@ -67,10 +67,13 @@ window.addEventListener('load', function() {
 
 
 $(document).ready(function() {
-  
+
+
   var ipfs = undefined;
   EmbarkJS.Storage.setProvider('ipfs',{server: 'ipfs.infura.io', port: '5001', protocol: 'https'})  
   
+  //getUser();
+
   $("#learn-more").hide();
   
   $(".btn-learn-more").click(function() {
@@ -89,15 +92,17 @@ $(document).ready(function() {
       let addresses = OpenSign.methods.getSignatures(id).call().then(function(signatures) { 
         signatures.forEach(function(sig) {
           console.log(sig) 
+          
           /*
           function decrypt(buffer){
             var decipher = crypto.createDecipher(algorithm,password)
             var dec = Buffer.concat([decipher.update(buffer) , decipher.final()]);
             return dec;
           }
-
+          
           decryptedFile = decrypt(cryptedFile);*/
 
+          
 
           $("#signatures button.get").hide();
           $("#signatures .card-body").append("<p>" + sig + "</p>");
@@ -113,19 +118,61 @@ $(document).ready(function() {
       console.log(deEncryptionPassword);
     });
 
+
+    let flag2 = false;
+    var parsedDecrypted = '';
+
+    function checkSigs() {
+      //console.log(currentUser);
+      console.log("current user:" + web3.eth.defaultAccount);
+      let addresses = OpenSign.methods.getSignatures(id).call().then(function(signatures) { 
+        signatures.forEach(function(sig) {
+          console.log("signed:" + sig) 
+          
+          /*
+          function decrypt(buffer){
+            var decipher = crypto.createDecipher(algorithm,password)
+            var dec = Buffer.concat([decipher.update(buffer) , decipher.final()]);
+            return dec;
+          }
+          
+          decryptedFile = decrypt(cryptedFile);*/
+
+          if (web3.eth.defaultAccount === sig) {
+            flag2 = true;
+          }
+        })
+      });
+
+      if (flag2) {
+        $("span.file_url").html('<a href="' + ipfs_url_base + parsedDecrypted + '">View document</a>');
+      } 
+    }
+
     // Sign the document
-    $("#sign button.set").click(function() {    
+    $("#sign button.set").click( function() {  
+
+      /*const accounts = web3.eth.getAccounts();
+      console.log(accounts[0]);*/
+
       OpenSign.methods.signDocument(id).send({from: web3.eth.defaultAccount});
       console.log(window.location.href);
       var encryptLink = window.location.href.substr(window.location.href.indexOf("&ipfs=") + 6);
       console.log("Encrypted hash = " + encryptLink)
       var decrypted = CryptoJS.AES.decrypt(encryptLink, deEncryptionPassword);
       console.log('decryptiong password used is = ' + deEncryptionPassword);
-      var parsedDecrypted = decrypted.toString(CryptoJS.enc.Utf8);
+      parsedDecrypted = decrypted.toString(CryptoJS.enc.Utf8);
       console.log('type of decrypted.toString is =' + typeof(decrypted));
       console.log("FINAL PRP REPORT FINAL 2018 = " + parsedDecrypted);
+
+      setInterval(checkSigs, 5000);
+
       $("#signed").show();
-      $("span.file_url").html('<a href="' + ipfs_url_base + parsedDecrypted + '">View document</a>');
+      
+      if (flag2) {
+        $("span.file_url").html('<a href="' + ipfs_url_base + parsedDecrypted + '">View document</a>');
+      } 
+
     });
   }
   

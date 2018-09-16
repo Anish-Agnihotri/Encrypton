@@ -24,3 +24,10 @@
 20:22:25.228260 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
 20:22:25.230077 db@janitor F·4 G·0
 20:22:25.230141 db@open done T·10.677715ms
+=============== Sep 16, 2018 (EDT) ===============
+00:10:33.913672 table@compaction L0·2 -> L1·0 S·1KiB Q·71
+00:10:33.914495 table@build created L1@8 N·31 S·1KiB "Dat..ion,v13":"\xb7\x91v..\xb2\x19\xff,v2"
+00:10:33.914582 version@stat F·[0 1] S·1KiB[0B 1KiB] Sc·[0.00 0.00]
+00:10:33.916258 table@compaction committed F-1 S-411B Ke·0 D·9 T·2.446467ms
+00:10:33.917728 table@remove removed @5
+00:10:33.918047 table@remove removed @2
