@@ -1,0 +1,8 @@
+.mainText {
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+}
+.mainText > h1 {
+    color: #1c2259;
+}

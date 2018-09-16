@@ -6,6 +6,8 @@ import { NavLink, Switch, Route } from 'react-router-dom';
 import SubHeader from '../Dashboard/SubHeader';
 import EncryptView from '../Dashboard/EncryptView';
 import TextHeader from '../Dashboard/TextHeader';
+import ViewView from '../Dashboard/ViewView';
+import ViewHeader from '../Dashboard/ViewHeader';
 
 const App = () => (
   <div className='app'>
@@ -68,7 +70,8 @@ const Encrypt = () => (
 const View = () => (
   <div className='status'>
     <SubHeader />
-    <h1>View Router</h1>
+    <ViewHeader />
+    <ViewView />
   </div>
 );
 
