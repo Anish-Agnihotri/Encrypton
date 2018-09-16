@@ -10,10 +10,23 @@ Starting the Encrypton platform is as simple as running a few commands in your t
 1. Start the backend server by navigating to ```/backend```, installing the dependencies with ```npm install``` and then starting it up with ```npm start```.
 2. Start the React frontend server by navigating to ```/frontend```, installing the dependencies with ```npm install``` and then starting it up with ```npm start```.
 3. Start the encryption frontend and server by navigating to ```/frontend/dashboard```, and running these three commands: ```ipfs daemon```, ```embark blockchain```, and ```embark run```. Do note, ```embark@2.6.9``` installed globally and ```geth``` are dependencies. 
-4. Finally, makesure you have the ```Metamask``` plugin and are authenticated on the ```Ropsten``` test network. 
+4. Finally, make sure you have the ```Metamask``` plugin and are authenticated on the ```Ropsten``` test network. 
 
 ## Fancy screesnhots of it working
+![Landing Page](https://i.imgur.com/QD7bcVm.png)
+Landing page. 
+![Encrypt Documents](https://i.imgur.com/QPdksIE.png)
+Encrypt Documents page. 
+![View Encrypted Documents](https://i.imgur.com/hElndf7.png)
+View encrypted documents page. 
+![IPFS Explorer](https://i.imgur.com/bUx7sEJ.png)
+IPFS unencrypted file explorer page.
+![Network Statistics](https://i.imgur.com/BjfcczU.png)
+Network statistics page. 
+![Documentation Page](https://i.imgur.com/GC6E1fc.png)
+Documentation page. 
 
 ## Next Steps
+A user-first unified platform to host documents and identification that users can choose to easily share with government organizations and other companies for short periods of times. 
 
 ## Thank you for reading and stay tuned for future updates!
