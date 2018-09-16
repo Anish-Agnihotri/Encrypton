@@ -13,7 +13,7 @@ Starting the Encrypton platform is as simple as running a few commands in your t
 4. Finally, make sure you have the ```Metamask``` plugin and are authenticated on the ```Ropsten``` test network. 
 
 ## Fancy screesnhots of it working
-![Landing Page](https://i.imgur.com/QD7bcVm.png)
+![Landing Page](https://i.imgur.com/8S6YQe6.png)
 Landing page. 
 ![Encrypt Documents](https://i.imgur.com/QPdksIE.png)
 Encrypt Documents page. 
