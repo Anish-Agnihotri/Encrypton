@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './HeadUp.css';
 import Login from '../Login';
 import Profile from '../Profile';
+import { NavLink } from 'react-router-dom';
 
 const LS_KEY = 'mm-login-demo:auth';
 
@@ -30,25 +31,33 @@ class HeadUp extends Component {
         return (
             <div className="header">
                 <div className="logo">
-                    <a href="/">
+                    <NavLink to='/'>
                         <img src="https://i.imgur.com/7TMRr31.png" />
-                    </a>
+                    </NavLink>
                 </div>
                 <div className="links">
-                    <ul>
+                    {auth ? (<ul>
                         <li>
-                            <a href="/dashboard">DASHBOARD</a>
+                            <NavLink to='/encrypt' activeClassName="highlight">DASHBOARD</NavLink>
                         </li>
                         <li>
-                            <a href="/explorer">EXPLORER</a>
+                            <NavLink to='/explorer' activeClassName="highlight">EXPLORER</NavLink>
                         </li>
                         <li>
-                            <a href="/status">STATUS</a>
+                            <NavLink to='/status' activeClassName="highlight">STATUS</NavLink>
                         </li>
                         <li>
-                            <a href="/documentation">DOCUMENTATION</a>
+                            <NavLink to='/documentation' activeClassName="highlight">DOCUMENTATION</NavLink>
                         </li>
-                    </ul>
+                    </ul>) : (<ul>
+                        <li>
+                            <NavLink to='/status' activeClassName="highlight">STATUS</NavLink>
+                        </li>
+                        <li>
+                            <NavLink to='/documentation' activeClassName="highlight">DOCUMENTATION</NavLink>
+                        </li>
+                    </ul>)}
+                    
                 </div>
                 <div className="auth">
                         {auth ? (
@@ -56,7 +65,7 @@ class HeadUp extends Component {
                 ) : (
                     <Login onLoggedIn={this.handleLoggedIn} />
                 )}
-                 <a className="help" href="/help"><i className="fas fa-question"></i>HELP</a>
+                 <NavLink className="help" to="/help"><i className= "fas fa-question"></i>HELP</NavLink>
                 </div>
             </div>
         );

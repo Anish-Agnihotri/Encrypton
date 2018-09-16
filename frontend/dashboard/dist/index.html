@@ -1,0 +1,111 @@
+<html>
+  <head>
+    <title>SignRecord - Decentralized document signing on the blockchain</title>
+    <link rel="stylesheet" href="css/app.css">
+    <script src="js/app.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://atchai.com/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://atchai.com/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://atchai.com/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://atchai.com/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://atchai.com/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://atchai.com/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://atchai.com/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://atchai.com/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://atchai.com/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://atchai.com/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://atchai.com/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://atchai.com/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://atchai.com/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://atchai.com/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://atchai.com/img/favicons/safari-pinned-tab.svg">
+    <style>
+      .textSubmit {
+        border-color: #1c2259 !important;
+        margin-top: 5px;
+        margin-top: -3px; 
+        margin-left: 5px;
+      }
+      .textSubmit:hover {
+        background-color: #1c2259 !important;
+        color: #ffffff;
+      }
+      .card-header {
+        background-color: #1c2259 !important;
+        color: #ffffff;
+      }
+      .uploadFile {
+        border-color: #1c2259 !important;
+        margin-top: 5px;
+        margin-top: -3px; 
+        margin-left: 5px;
+      }
+      .uploadFile:hover {
+        background-color: #1c2259 !important;
+        color: #ffffff;
+      }
+    </style>
+  </head>
+  
+  <body>
+
+    <!-- CONTENT  -->
+  
+    <div class="container" id="main-content">
+    
+      <div class="card bg-light mb-3 mx-auto" id="encrypt" style="max-width:90%;">
+        <div class="card-header"><b>Step 1:</b> Choose an encryption password.</div>
+        <div class="card-body">
+          <div class="form-group form-inline">
+            <input type="password" class="form-control" style="width: 86%;"> 
+            <button class="textSubmit set btn btn-outline-primary">Secure</button>
+          </div>
+          <p>Choose a safe password to encrypt the IPFS hash of your documents. This password will be required by any external individual who tries to access your files or documents.</p>
+        </div>
+      </div>
+
+      <div class="card bg-light mb-3 mx-auto" id="storage" style="max-width:90%;">
+        <div class="card-header"><b>Step 2:</b> Upload your desired document.</div>
+        <div class="card-body">
+          <div class="form-group form-inline">
+            <input type="file" class="form-control" id="file-input" style="width: 86%;"> 
+            <button class="uploadFile set btn btn-outline-primary">Upload</button>
+          </div>
+          <p>The IPFS hash for this document will be saved with AES-encryption. For more information, please read the documentation.</p>
+        </div>
+      </div>
+    
+      <div class="card bg-light mb-3 mx-auto" id="blockchain" style="max-width:90%;">
+        <div class="card-header"><b>Step 3:</b> Sign the document with your wallet.</div>
+        <div class="card-body">
+          <div class="form-group form-inline">
+            <!--<input type="text" class="text form-control" placeholder="Your name">-->
+            <button class="set btn btn-success">I Agree</button>
+          </div>
+          <p>You will need <a href="https://metamask.io/">MetaMask</a> or a similar ethereum enabled browser in order to complete this step.  Clicking "I agree" should open MetaMask and request you to submit a transaction for zero ether.  There will be a gas cost for this transaction, likely between $0.03 and $0.30. </p>
+          <p>Signing will associate your ethereum address with this document publically on the blockchain.</p>
+        </div>
+      </div>
+    
+      <div class="card bg-light mb-3 mx-auto" id="invite" style="max-width:90%;">
+        <div class="card-header"><b>Step 4:</b> Share your encrypted link.</div>
+        <div class="card-body">
+          <p>Your transaction may take a few minutes to process on the Ethereum network.</p>
+        </div>
+      </div>
+    
+    </div>
+  </body>
+  
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18118166-3"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-18118166-3');
+  </script>
+  
+   
+</html>

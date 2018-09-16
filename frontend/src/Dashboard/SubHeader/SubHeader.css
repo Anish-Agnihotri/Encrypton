@@ -1,0 +1,50 @@
+.subHeader {
+    height: 60px;
+    background-color: #1c2259;
+}
+.leftPush {
+    width: 20%;
+    height: 100%;
+    float: left;
+}
+.midPush {
+    width: 80%;
+    height: 100%;
+    float: left;
+}
+.links2 {
+    width: 50%;
+    height: 100%;
+    float: left;
+  }
+  .links2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    margin-top: 15px;
+  }
+  
+  .links2 li {
+    float: left;
+  }
+  
+  .links2 li a {
+    display: block;
+    color: #d9d9d9;
+    text-align: center;
+    padding: 10px 12px;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  .links2 li a:hover {
+    color: #fefefe;
+    transition: 0.3s ease;
+  }
+
+  .highlight2 {
+    color: #fefefe !important;
+  }

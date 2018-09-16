@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <title>SignRecord - Decentralized document signing on the blockchain</title>
+    <link rel="stylesheet" href="../css/app.css">
+    <script src="../js/app.js"></script>
+    <link rel="apple-touch-icon" sizes="57x57" href="https://atchai.com/img/favicons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="https://atchai.com/img/favicons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="https://atchai.com/img/favicons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="https://atchai.com/img/favicons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="https://atchai.com/img/favicons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="https://atchai.com/img/favicons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://atchai.com/img/favicons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://atchai.com/img/favicons/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://atchai.com/img/favicons/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="https://atchai.com/img/favicons/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="https://atchai.com/img/favicons/android-chrome-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="https://atchai.com/img/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="https://atchai.com/img/favicons/favicon-16x16.png" sizes="16x16">
+    <link rel="manifest" href="https://atchai.com/img/favicons/manifest.json">
+    <link rel="mask-icon" href="https://atchai.com/img/favicons/safari-pinned-tab.svg">
+  </head>
+  
+  <body>    
+    <!-- CONTENT  -->
+  
+    <div class="container" id="main-content">
+      <div class="row" style="margin: 50 0 50 0px">
+        <div class="col-md-12 text-center">
+          <h2>Sign an Agreement</h2>
+        </div>
+      </div>
+    
+  
+      <div class="card bg-light mb-3 mx-auto" id="" style="max-width:90%;">
+        <div class="card-header"><b>You have been invited to sign a document</b></div>
+        <div class="card-body text-centre centre-text">
+          <h2><span class="file_url"></span></h2>
+        </div>
+      </div>
+
+      <div class="card bg-light mb-3 mx-auto" style="max-width:90%;" id="get_password">
+        <div class="card-header"><b>What is your password to unlock this document?</b></div>
+        <div class="card-body">
+          <div class="form-group form-inline">
+            <input type="text" class="form-control" style="width: 100%; margin-bottom: 10px;"> 
+            <button class="textSubmit set btn btn-outline-primary">Upload</button>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="card bg-light mb-3 mx-auto" style="max-width:90%;" id="signatures">
+        <div class="card-header"><b>Who has signed already?</b></div>
+        <div class="card-body">
+          <button class="get btn btn-primary">Get addresses that have already signed this document</button>
+        </div>
+      </div>
+    
+      <div class="card bg-light mb-3 mx-auto" id="sign" style="max-width:90%;">
+        <div class="card-header"><b>Add your signature</b></div>
+        <div class="card-body">
+          <p>By clicking "I Agree" you confirm that you have read the document linked above and that you agree to sign it.  You will need to be using a browser with Ethereum support such as the MetaMask plugin. </p>
+            
+          <p>You will need <a href="https://metamask.io/">MetaMask</a> or a similar ethereum enabled browser in order to complete this step.  Clicking "I agree" should open MetaMask and request you to submit a transaction for zero ether.  There will be a gas cost for this transaction, likely between $0.03 and $0.30. </p>
+          <p>Signing will associate your ethereum address with this document publically on the blockchain.</p>
+          <div class="form-group form-inline">
+            <!--<input type="text" class="text form-control" placeholder="Your name"> -->
+            <button class="set btn btn-success">I agree</button>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card bg-light mb-3 mx-auto" id="signed" style="max-width:90%;">
+        <div class="card-header"><b>Transaction Processing</b></div>
+        <div class="card-body">
+          <p>Your transaction may take a few minutes to process on the Ethereum network.</p>
+            
+          <p>When your transaction has been processed then you can refresh the page and see that your address has been added to the list of signatures.</p>
+        </div>
+      </div>
+      
+    </div>
+  </body>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-18118166-3"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-18118166-3');
+  </script>
+  
+
+</html>
