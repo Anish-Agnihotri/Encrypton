@@ -109,7 +109,7 @@ $(document).ready(function() {
     var deEncryptionPassword = '';
 
     $("#get_password button.textSubmit").click(function() {
-      deEncryptionPassword = $("#get_password input[type=text]").val();
+      deEncryptionPassword = $("#get_password input[type=password]").val();
       console.log(deEncryptionPassword);
     });
 

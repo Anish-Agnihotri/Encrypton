@@ -41,7 +41,7 @@ class HeadUp extends Component {
                             <NavLink to='/encrypt' activeClassName="highlight">DASHBOARD</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/explorer' activeClassName="highlight">EXPLORER</NavLink>
+                            <NavLink to='/central' activeClassName="highlight">CENTRAL</NavLink>
                         </li>
                         <li>
                             <NavLink to='/status' activeClassName="highlight">STATUS</NavLink>

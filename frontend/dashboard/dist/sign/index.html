@@ -18,23 +18,44 @@
     <link rel="icon" type="image/png" href="https://atchai.com/img/favicons/favicon-16x16.png" sizes="16x16">
     <link rel="manifest" href="https://atchai.com/img/favicons/manifest.json">
     <link rel="mask-icon" href="https://atchai.com/img/favicons/safari-pinned-tab.svg">
+    <style>
+      .textSubmit {
+        border-color: #1c2259 !important;
+        margin-top: 5px;
+        margin-top: -3px; 
+        margin-left: 5px;
+      }
+      .textSubmit:hover {
+        background-color: #1c2259 !important;
+        color: #ffffff;
+      }
+      .card-header {
+        background-color: #1c2259 !important;
+        color: #ffffff;
+      }
+      .uploadFile {
+        border-color: #1c2259 !important;
+        margin-top: 5px;
+        margin-top: -3px; 
+        margin-left: 5px;
+      }
+      .uploadFile:hover {
+        background-color: #1c2259 !important;
+        color: #ffffff;
+      }
+    </style>
   </head>
   
   <body>    
     <!-- CONTENT  -->
   
     <div class="container" id="main-content">
-      <div class="row" style="margin: 50 0 50 0px">
-        <div class="col-md-12 text-center">
-          <h2>Sign an Agreement</h2>
-        </div>
-      </div>
-    
   
       <div class="card bg-light mb-3 mx-auto" id="" style="max-width:90%;">
-        <div class="card-header"><b>You have been invited to sign a document</b></div>
+        <div class="card-header"><b>View Document.</b></div>
         <div class="card-body text-centre centre-text">
           <h2><span class="file_url"></span></h2>
+          <p>To view the secure document file, please type the secure passcode into the field below, and sign the file with your wallet to authenticate your identity publically.</p>
         </div>
       </div>
 
@@ -42,8 +63,8 @@
         <div class="card-header"><b>What is your password to unlock this document?</b></div>
         <div class="card-body">
           <div class="form-group form-inline">
-            <input type="text" class="form-control" style="width: 100%; margin-bottom: 10px;"> 
-            <button class="textSubmit set btn btn-outline-primary">Upload</button>
+            <input type="password" class="form-control" style="width: 86%;"> 
+            <button class="textSubmit set btn btn-outline-primary">Unlock</button>
           </div>
         </div>
       </div>

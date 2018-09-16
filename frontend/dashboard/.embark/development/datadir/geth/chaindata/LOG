@@ -14,3 +14,13 @@
 20:16:33.264706 version@stat F·[1] S·698B[698B] Sc·[0.25]
 20:16:33.267175 db@janitor F·3 G·0
 20:16:33.267235 db@open done T·11.898612ms
+=============== Sep 15, 2018 (EDT) ===============
+20:22:25.218914 log@legend F·NumFile S·FileSize N·Entry C·BadEntry B·BadBlock Ke·KeyError D·DroppedEntry L·Level Q·SeqNum T·TimeElapsed
+20:22:25.219370 version@stat F·[1] S·698B[698B] Sc·[0.25]
+20:22:25.219421 db@open opening
+20:22:25.219548 journal@recovery F·1
+20:22:25.223218 journal@recovery recovering @3
+20:22:25.224213 memdb@flush created L0@5 N·29 S·1KiB "Dat..ion,v13":"r\x00\x00..\f?w,v37"
+20:22:25.228260 version@stat F·[2] S·1KiB[1KiB] Sc·[0.50]
+20:22:25.230077 db@janitor F·4 G·0
+20:22:25.230141 db@open done T·10.677715ms

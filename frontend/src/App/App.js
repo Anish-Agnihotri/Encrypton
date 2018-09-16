@@ -5,6 +5,7 @@ import { NavLink, Switch, Route } from 'react-router-dom';
 
 import SubHeader from '../Dashboard/SubHeader';
 import EncryptView from '../Dashboard/EncryptView';
+import TextHeader from '../Dashboard/TextHeader';
 
 const App = () => (
   <div className='app'>
@@ -16,7 +17,7 @@ const App = () => (
 const Main = () => (
   <Switch>
     <Route exact path='/' component={Home}></Route>
-    <Route exact path='/explorer' component={Explorer}></Route>
+    <Route exact path='/central' component={Central}></Route>
     <Route exact path='/status' component={Status}></Route>
     <Route exact path='/documentation' component={Documentation}></Route>
     <Route exact path='/help' component={Help}></Route>
@@ -32,9 +33,9 @@ const Home = () => (
 );
 
 
-const Explorer = () => (
+const Central = () => (
   <div className='main'>
-    <h1>Explorer Router</h1>
+    <h1>Central Router</h1>
   </div>
 );
 
@@ -59,6 +60,7 @@ const Help = () => (
 const Encrypt = () => (
   <div className='status'>
     <SubHeader />
+    <TextHeader />
     <EncryptView />
   </div>
 );

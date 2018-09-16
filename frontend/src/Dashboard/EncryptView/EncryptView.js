@@ -6,7 +6,6 @@ class EncryptView extends Component {
     render () {
         return (
             <div className="struct">
-                <p>Test</p>
                 <iframe src='http://localhost:8000' width='100%' height='2000px' className="iFrameHidden"></iframe>
             </div>
         );
