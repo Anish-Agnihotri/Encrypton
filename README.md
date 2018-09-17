@@ -2,7 +2,7 @@
 
 Encrypton was designed and developed to be an easy solution to document credentialization and authentication on a public ledger. It offers a convenient way for individuals to encrypt and share files over IPFS (InterPlanetary File System) using the Ethereum and client-side AES-256 encryption.
 
-PS. We (Anish Agnihotri and Ryan Ouyang) pair programmed the entire project on Anish's laptop, hence why Ryan does not have any commits.
+> PS. Anish Agnihotri and Ryan Ouyang pair programmed the entire project on Anish's laptop, hence why Ryan does not have any commits.
 
 ## Inspiration
 The idea for Encrypton stemmed from the conspicious lack of platforms to share private data in a secure and safe manner. With an ever developing world, it's become increasingly evident that documents on the cloud are the future. But, with platforms like Google Drive & Dropbox, it's difficult to trust large private corporations with such sensitive data. That's where Encrypton comes in with our easy to use platform for secure file storage (on IPFS) and transfer. 
